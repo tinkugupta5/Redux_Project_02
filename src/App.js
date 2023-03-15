@@ -1,13 +1,17 @@
-import "./App.css";
-import Layout from "./Components/Layout";
+import { Routes, Route } from "react-router-dom";
+import PageNotFound from "./Components/PageNotFound";
+import HomePage from "./Pages/HomePage";
+import ProductDetails from "./Pages/ProductDetails";
+
 function App() {
   return (
-    <div className="container">
-      <h1>This is app</h1>
-      <Layout>
-        <h1>I am talking from layout</h1>
-      </Layout>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/products/:pid" element={<ProductDetails />} />
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
+    </>
   );
 }
 
