@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {} from "react-icons/fa";
+import { FaBeer } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -8,6 +8,7 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
         <div className="container">
           <Link className="navbar-brand" to="/">
+            <FaBeer />
             Cocktail Website
           </Link>
           <button
