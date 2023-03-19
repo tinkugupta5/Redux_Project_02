@@ -19,6 +19,7 @@ const cocktailSlice = createSlice({
     error: null,
     cocktail: [], //for single product
   },
+
   //this work like switch case
   extraReducers: {
     // first request
@@ -28,7 +29,7 @@ const cocktailSlice = createSlice({
     //2. seconf request
     [fetchCocktails.fulfilled]: (state, action) => {
       state.loading = false;
-      state.cocktails = action.payload.drinnks;
+      state.cocktails = action.payload.drinks;
     },
     [fetchCocktails.rejected]: (state, action) => {
       state.loading = false;
@@ -37,4 +38,4 @@ const cocktailSlice = createSlice({
   },
 });
 
-export default cocktailSlice;
+export default cocktailSlice.reducer;
