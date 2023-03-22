@@ -5,6 +5,7 @@ import { fetchCocktails } from "../Redux/features/cocktailSlice";
 
 const HomePage = () => {
   const [modifiedCocktails, setmodifiedCocktails] = useState([]);
+
   const { loading, cocktails, error } = useSelector((state) => ({
     ...state.app,
   }));
