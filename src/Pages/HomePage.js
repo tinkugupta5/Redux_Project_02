@@ -44,7 +44,7 @@ const HomePage = () => {
 
   return (
     <Layout>
-      <h1>Home Page</h1>
+      <h1>Home Pagee</h1>
     </Layout>
   );
 };
