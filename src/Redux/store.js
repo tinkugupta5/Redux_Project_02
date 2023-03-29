@@ -3,6 +3,7 @@ import cocktailSlice from "./features/cocktailSlice";
 
 export default configureStore({
   reducer: {
-    app: cocktailSlice,
+    // app is the name 
+    app: cocktailSlice
   },
 });
